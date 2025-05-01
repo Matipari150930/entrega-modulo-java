@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Newtoncitos</title>
+    <link rel="stylesheet" href="estilosEvaluativo2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- título y subtítulo -->
+
+    <header class="titulo">
+        <h1>Los Newtoncitos</h1>
+    </header>
+    
+    <h6 class="subtitulo">Hacé tus cálculos y anotá tus ecuaciones y tareas :D</h6>
+
+    <!-- acá junté a la calculadora y a la lista de tareas para tener una mejor organización visual en la página y que no todo se vea como un solitaria columna en scroll-->
+    
+    <div class="calculadoraLista">
+
+    <!-- calculadora -->
+
+    <section id="calculadora">
+        <h2>Calculadora</h2>
+        <input id="num1" type="number" placeholder="Ingrese un número">
+        <br>
+        <select id="operacion">
+            <option value="sumar">+</option>
+            <option value="restar">-</option>
+            <option value="multiplicar">*</option>
+            <option value="dividir">/</option>
+        </select>
+        <br>
+        <input id="num2" type="number" placeholder="Ingrese un número">
+        <button id="btn-calcular" type="button" class="btn btn-outline-secondary">Calcular</button>
+        <p>Resultado: <span id="resultado">0</span></p>
+    </section>
+
+    <!-- lista de tareas -->
+    <section id="lista-tareas">
+        <h2>Lista de Tareas</h2>
+        <input id="input-tarea" type="text" placeholder="Nueva tarea">
+        <button id="btn-agregar-tarea" type="button" class="btn btn-outline-secondary">Agregar Tarea</button>
+        <ul id="lista-de-tareas"></ul>
+    </section>
+</div>
+    <!-- imágenes -->
+    <section id="galeria">
+        <h2>El padre del cálculo: Isaac Newton</h2>
+        <img id="imagen-principal" src="isaac0.jpg" alt="Isaac Newton">
+        <div id="miniaturas">
+            <img class="miniatura" src="isaac0.jpg" alt="Isaac Newton">
+            <img class="miniatura" src="isaac1.jpg" alt="Isaac Newton Joven">
+            <img class="miniatura" src="isaac2.jpg" alt="Isaac Newton Estudioso">
+            <img class="miniatura" src="isaac3.jpg" alt="Isaac Newton últimos años de vida">
+        </div>
+    </section>
+
+    <script src="script2evaluativo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+
+</html>
